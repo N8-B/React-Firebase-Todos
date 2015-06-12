@@ -2,7 +2,9 @@
 var React = require('react'),
     ReactFire = require('reactfire'),
     Firebase = require('firebase'),
-    RootUrl = 'https://vivid-torch-2280.firebaseio.com/';
+    // Update url in config.js with your Firebase app url
+    config = require('../config'),
+    RootUrl = config.firebase.rootUrl;
 
 // React components
 var Header = require('./header'),
